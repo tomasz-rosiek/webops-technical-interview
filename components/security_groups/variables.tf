@@ -10,5 +10,5 @@ variable "aws_region" {}
 
 # Any ip address ranges which ephemeral server/s are on
 variable "allowed_cidr_blocks" {
-  type = "list"
+  type = "string"
 }
