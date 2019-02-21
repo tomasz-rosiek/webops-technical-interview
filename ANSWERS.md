@@ -22,5 +22,8 @@ allowed_cidr_blocks = ["163.171.34.18/32"]
 
 causing terraform to see the type as incorrect.
 
+There is a missing folder called "secret" which should contain keypair1.pem and keypair1.pub. 
+They will have to create these keys with sshkeygen as wel as the folder.
+
 ## Bonus
 I have named the module "aws_centos" but then used the ubuntu ami. This is asked as to test knowledge across distros, plus a more unusual troubleshooting scenario than standard Terraform.

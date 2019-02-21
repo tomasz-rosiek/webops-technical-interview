@@ -1,8 +1,9 @@
 leakDetectionExemptions:
- - ruleId: 'rule-1'
+ - ruleId: 'rule1'
    filePaths:
       - '/components/security_groups/terraform.tfvars'     
       - '/components/linux_server/terraform.tfvars'
       - '/modules/security_groups/security_common.tf'
       - '/modules/aws_vpc/vpc.tf'
       - '/ANSWERS.md'
+ 
