@@ -1,0 +1,15 @@
+#cloud-config
+
+hostname: "${hostname}"
+
+users:
+ - name: "root"
+   groups:
+     - "sudo"
+   ssh-authorized-keys:
+     - ${authorized_key_root}
+   sudo: ['ALL=(ALL) NOPASSWD:ALL']
+
+runcmd:
+  # Remove the AWS AMI's restriction which prevents login as root via SSH
+  - sed -i -e's/,command=\"echo '"'"'Please login as the user \\\"NONE\\\" rather than the user \\\"root\\\"\.'"'"';echo;sleep 10\"//' /root/.ssh/authorized_keys
