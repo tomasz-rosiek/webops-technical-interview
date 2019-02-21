@@ -1,5 +1,5 @@
 leakDetectionExemptions:
- - ruleId: 'rule1'
+ - ruleId: 'ip_addresses'
    filePaths:
       - '/components/security_groups/terraform.tfvars'     
       - '/components/linux_server/terraform.tfvars'
