@@ -19,8 +19,8 @@ resource "aws_security_group" "linux_servers" {
 
 resource "aws_security_group_rule" "ssh" {
   type              = "ingress"
-  from_port         = 99
-  to_port           = 99
+  from_port         = 22
+  to_port           = 22
   protocol          = "TCP"
   cidr_blocks       = ["${compact(var.allowed_cidr_blocks)}"]
   security_group_id = "${aws_security_group.linux_servers.id}"
