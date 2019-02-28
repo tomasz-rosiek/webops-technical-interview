@@ -1,6 +1,9 @@
 # The environment to tag resources with
 variable "environment" {}
 
+# The VPC to add instances to.
+variable "vpc_id" {}
+
 # The role the instance will serve. Used when naming and tagging the instance.
 variable "role_name" {}
 
