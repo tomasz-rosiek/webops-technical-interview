@@ -52,3 +52,7 @@ variable "termination" {
 variable public_ip_false {
   default = false
 }
+
+variable "vpc_id" {
+  type = "string"
+}

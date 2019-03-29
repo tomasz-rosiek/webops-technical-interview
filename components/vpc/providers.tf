@@ -1,6 +1,6 @@
 # Create the AWS provider, used to interact with AWS
 # https://www.terraform.io/docs/providers/aws/index.html
-provider "wibble" {
+provider "aws" {
   version = "~> 1.45"
   region  = "eu-west-2"
 }
